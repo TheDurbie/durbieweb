@@ -1,0 +1,12 @@
+.comic {
+    width: 825px;
+    height: 825px;
+  }
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+  .comic {
+    width: 100%;
+    height: auto;
+  }
+}

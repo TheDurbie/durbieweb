@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+body {
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #bfbfbf;
+}
+
+#logo {
+  border: SlateBlue 3px solid;
+  max-width: 64px;
+}
+
+#banner {
+  margin: 0;
+  background-image: url(img/banner.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+}
+
+header {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+nav {
+  max-width: 900px;
+  background-color: #205081;
+  font-size: 16px;
+  max-height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  border: black solid 2px;
+}
+
+nav img {
+  max-height: 58px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  color: white;
+  margin-left: 15px;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul a {
+  color: white;
+  text-decoration: none;
+}
+
+ul a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+#socials {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.social-icon {
+  color: white;
+  margin-right: 5px;
+}
+
+main {
+  max-width: 896px;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  border: black solid 2px;
+  border-top: none;
+  color: white;
+  background-color: #323232;
+}
+
+main h1, h2, h3, h4, h5, h6 {
+  text-shadow: black 3px 3px;
+  margin-top: 0;
+}
+
+main h2, h3 {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+footer {
+  max-width: 896px;
+  margin: 0 auto;
+  border: black solid 2px;
+  border-top: none;
+  text-align: right;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer span{
+  margin-right: 5px;
+}
+
+#link {
+  color: white;
+  border-bottom: 1px solid white;
+  text-decoration: none;
+}
+
+#link:hover {
+  color: white;
+  border: 0;
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+  #banner {
+    height: 70px;
+    background-size: contain;
+  }
+
+  nav {
+    font-size: 14px;
+  }
+
+  ul {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  main {
+    padding: 15px;
+  }
+
+  main h1 {
+    font-size: 2rem;
+  }
+
+  main h2, main h3 {
+    max-width: 90%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
+}
